@@ -1,0 +1,371 @@
+/* Home Hero Section */
+.hero-section {
+  position: relative;
+  background: var(--grad-soft-bg);
+  padding: 40px 0 60px;
+  overflow: hidden;
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.35fr 1.15fr;
+  align-items: center;
+  gap: 32px;
+  min-height: 520px;
+}
+
+/* Hero Left - Stethoscope Heart Illustration */
+.hero-left {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.stethoscope-container {
+  position: relative;
+  width: 100%;
+  max-width: 320px;
+}
+
+.stethoscope-svg {
+  width: 100%;
+  height: auto;
+  filter: drop-shadow(0 12px 24px rgba(30, 136, 229, 0.12));
+  animation: floatSlow 6s ease-in-out infinite;
+}
+
+.quote-bubble-left {
+  position: absolute;
+  top: 13%;
+  left: 50%;
+  transform: translateX(-50%) rotate(-4deg);
+  text-align: center;
+  font-family: var(--font-hand);
+  font-size: 1.2rem;
+  color: #546e7a;
+  line-height: 1.2;
+  pointer-events: none;
+  width: max-content;
+}
+
+/* Hero Center - AI Messaging */
+.hero-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 0 10px;
+  z-index: 2;
+}
+
+.tag-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: #e8f5e9;
+  color: #2e7d32;
+  font-weight: 700;
+  font-size: 0.85rem;
+  padding: 6px 16px;
+  border-radius: var(--radius-full);
+  margin-bottom: 20px;
+  border: 1px solid #c8e6c9;
+}
+
+.hero-title {
+  font-size: 3.1rem;
+  font-weight: 800;
+  line-height: 1.15;
+  margin-bottom: 18px;
+  letter-spacing: -0.8px;
+}
+
+.hero-title-blue {
+  color: #0f3460;
+  display: block;
+}
+
+.hero-title-green {
+  color: #2e7d32;
+  display: block;
+}
+
+.hero-description {
+  font-size: 1.05rem;
+  color: #475569;
+  line-height: 1.6;
+  max-width: 520px;
+  margin-bottom: 28px;
+}
+
+/* 3 Feature Pills */
+.hero-features-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 34px;
+  flex-wrap: wrap;
+}
+
+.feature-pill {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  background: #ffffff;
+  padding: 12px 16px;
+  border-radius: var(--radius-md);
+  box-shadow: 0 4px 14px rgba(15, 23, 42, 0.05);
+  border: 1px solid #f1f5f9;
+  min-width: 100px;
+  transition: transform var(--transition-fast);
+}
+
+.feature-pill:hover {
+  transform: translateY(-2px);
+}
+
+.feature-icon-circle {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.feature-icon-circle.blue {
+  background: #e3f2fd;
+  color: #1976d2;
+}
+
+.feature-icon-circle.green {
+  background: #e8f5e9;
+  color: #2e7d32;
+}
+
+.feature-pill-title {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #1e293b;
+  text-align: center;
+  line-height: 1.2;
+}
+
+/* Hero CTA Button */
+.hero-cta-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.hero-note {
+  font-family: var(--font-hand);
+  font-size: 1.15rem;
+  color: #00897b;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* Hero Right - Child with Teddy Bear Illustration */
+.hero-right {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.child-visual-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 380px;
+}
+
+.child-image-card {
+  width: 100%;
+  border-radius: 36px;
+  overflow: hidden;
+  box-shadow: 0 16px 36px rgba(0, 50, 100, 0.1);
+  background: #ffffff;
+  position: relative;
+}
+
+.floating-card-quote {
+  position: absolute;
+  bottom: -15px;
+  right: -10px;
+  background: #ffffff;
+  padding: 12px 18px;
+  border-radius: 20px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  border: 1px solid #e2e8f0;
+  font-family: var(--font-hand);
+  font-size: 1.05rem;
+  color: #0f3460;
+  max-width: 170px;
+  line-height: 1.25;
+  text-align: center;
+  transform: rotate(-2deg);
+}
+
+.floating-top-quote {
+  position: absolute;
+  top: 10px;
+  right: 5px;
+  font-family: var(--font-hand);
+  font-size: 1.15rem;
+  color: #475569;
+  text-align: right;
+  line-height: 1.2;
+  pointer-events: none;
+}
+
+/* Why CubCare Section */
+.why-section {
+  padding: 80px 0 90px;
+  background: #ffffff;
+  position: relative;
+}
+
+.why-header {
+  text-align: center;
+  max-width: 720px;
+  margin: 0 auto 50px;
+}
+
+.why-eyebrow {
+  font-size: 0.85rem;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  color: #2e7d32;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.why-title {
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: #0f3460;
+  margin-bottom: 14px;
+}
+
+.why-subtitle {
+  font-size: 1.05rem;
+  color: #64748b;
+  line-height: 1.6;
+}
+
+.why-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.why-card {
+  background: #ffffff;
+  border: 1px solid #edf2f7;
+  border-radius: var(--radius-xl);
+  padding: 30px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.03);
+  transition: all var(--transition-normal);
+}
+
+.why-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 28px rgba(30, 136, 229, 0.08);
+  border-color: #bbdefb;
+}
+
+.why-icon-box {
+  width: 52px;
+  height: 52px;
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.why-icon-box.green {
+  background: #e8f5e9;
+  color: #2e7d32;
+}
+
+.why-icon-box.teal {
+  background: #e0f2f1;
+  color: #00897b;
+}
+
+.why-icon-box.blue {
+  background: #e3f2fd;
+  color: #1976d2;
+}
+
+.why-icon-box.mint {
+  background: #f1f8e9;
+  color: #689f38;
+}
+
+.why-card-title {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #0f3460;
+}
+
+.why-card-desc {
+  font-size: 0.92rem;
+  color: #64748b;
+  line-height: 1.5;
+}
+
+/* Bottom Caring Note */
+.bottom-caring-banner {
+  text-align: center;
+  padding: 40px 0 20px;
+  font-family: var(--font-hand);
+  font-size: 1.5rem;
+  color: #00897b;
+}
+
+/* Animations */
+@keyframes floatSlow {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-8px); }
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .hero-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .hero-left {
+    display: none;
+  }
+  .why-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-grid {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .hero-title {
+    font-size: 2.3rem;
+  }
+  .why-grid {
+    grid-template-columns: 1fr;
+  }
+  .hero-right {
+    margin-top: 20px;
+  }
+}

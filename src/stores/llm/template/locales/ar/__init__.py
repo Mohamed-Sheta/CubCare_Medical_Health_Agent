@@ -1,0 +1,1 @@
+from src.stores.llm.template.locales.ar.rag import system_prompt, chat_information_history ,document_prompt, footer_prompt

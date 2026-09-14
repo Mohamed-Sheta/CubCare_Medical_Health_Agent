@@ -1,0 +1,1 @@
+from src.stores.summary.prompts.summary_instruction import summary_instruction_prompt

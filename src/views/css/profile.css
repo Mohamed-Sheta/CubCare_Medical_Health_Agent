@@ -1,0 +1,73 @@
+.profile-page {
+  padding: 50px 0 80px;
+  background: #f8fafc;
+  min-height: calc(100vh - var(--header-height));
+}
+
+.profile-card {
+  background: #ffffff;
+  border-radius: var(--radius-xl);
+  border: 1px solid var(--border-light);
+  padding: 40px;
+  box-shadow: var(--shadow-sm);
+  margin-bottom: 30px;
+}
+
+.profile-header-area {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  padding-bottom: 28px;
+  border-bottom: 1px solid var(--border-light);
+  margin-bottom: 30px;
+}
+
+.profile-avatar-large {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: var(--grad-primary);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.2rem;
+  font-weight: 800;
+  box-shadow: 0 4px 14px rgba(30, 136, 229, 0.3);
+}
+
+.profile-user-info h2 {
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: #0f3460;
+  margin-bottom: 4px;
+}
+
+.profile-user-info p {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+}
+
+/* Danger Zone */
+.danger-zone-card {
+  background: #fffbfa;
+  border: 1.5px solid #ffcdd2;
+  border-radius: var(--radius-xl);
+  padding: 30px 40px;
+}
+
+.danger-zone-title {
+  color: #c62828;
+  font-size: 1.2rem;
+  font-weight: 800;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.danger-zone-desc {
+  font-size: 0.92rem;
+  color: #7f1d1d;
+  margin-bottom: 20px;
+}
